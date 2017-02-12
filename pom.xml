@@ -73,16 +73,15 @@
                </execution>
             </executions>
          </plugin>-->
-         <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-war-plugin</artifactId>
-         <version>2.2</version>
-
+          <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.0</version>
    <configuration>
         <webResources>
               <resource>
                                     <!-- this is relative to the pom.xml directory -->
-                 <directory>/root/SimpleWebApp/WebContent</directory>
+                 <directory>/root/.jenkins/jobs/maven/workspace/WebContent</directory>
               </resource>
         </webResources>
    </configuration>         
