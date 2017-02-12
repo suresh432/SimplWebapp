@@ -88,4 +88,10 @@
 </plugin>
       </plugins>
    </build>
+   <repositories>
+    <repository>
+      <id>my-internal-site</id>
+      <url>http://http://174.129.80.110/home/ec2-user</url>
+    </repository>
+  </repositories>
 </project>
