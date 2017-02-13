@@ -73,6 +73,35 @@
                </execution>
             </executions>
          </plugin>-->
+         <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${checkstyle.plugin.version}</version>
+				<configuration>
+					<configLocation>http://${localhost}/precommit/Hooks/CheckStyle/curocheckstyle.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${pmd.plugin.version}</version>
+				<configuration>
+					<linkXRef>false</linkXRef>
+					<targetJdk>1.8</targetJdk>
+					<rulesets>
+						<ruleset>http://${localhost}/precommit/Hooks/PMD/curopmdrules.xml</ruleset>
+					</rulesets>
+					<includeTests>false</includeTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>${findbugsplugin.version}</version>
+				<configuration>
+					<excludeFilterFile>http://${localhost}/precommit/Hooks/Findbugs/findbugsExclude.xml</excludeFilterFile>
+				</configuration>
+			</plugin>
           <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
