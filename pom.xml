@@ -74,26 +74,10 @@
             </executions>
          </plugin>-->
          <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>${checkstyle.plugin.version}</version>
-				
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>${pmd.plugin.version}</version>
-				<configuration>
-					<linkXRef>false</linkXRef>
-					<targetJdk>1.7</targetJdk>
-					<includeTests>false</includeTests>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>${findbugsplugin.version}</version>
-			</plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.7</version>
+      </plugin>
           <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
