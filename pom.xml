@@ -100,13 +100,11 @@
 						</execution>
 					</executions>
 				</plugin>
-	      <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>3.7</version>
       </plugin>
-    </plugins>
           <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
